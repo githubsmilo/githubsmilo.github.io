@@ -2,16 +2,18 @@
 layout: post
 title:  "Hello, SBT"
 date:   2016-03-07
+comments : true
 categories:
 - blog
-permalink: hello-sbt
+permalink: Hello, SBT
 ---
-##### 1. SBT 란?
+
+### 1. SBT 란?
 * sbt(simple build tool) is a build tool for Scala, Java, and more. It requires Java 1.6 or later.
 * [download](http://www.scala-sbt.org/download.html){:target="_blank"}
 * [documentation](http://www.scala-sbt.org/documentation.html){:target="_blank"}
 
-##### 2. SBT 설치
+### 2. SBT 설치
 * Ubuntu 15.10 에서 설치 시도
 * 설치 과정
 {% highlight bash %}
@@ -35,7 +37,7 @@ $ sudo update-ca-certificates -f
 $ sbt
 {% endhighlight %}
 
-##### 3. [Hello, world](http://www.scala-sbt.org/0.13/docs/Hello.html){:target="_blank"}
+### 3. [Hello, world](http://www.scala-sbt.org/0.13/docs/Hello.html){:target="_blank"}
 {% highlight bash %}
 $ mkdir hello
 $ cd hello
