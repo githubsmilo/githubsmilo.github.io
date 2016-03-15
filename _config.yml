@@ -2,10 +2,10 @@
 permalink:           pretty
 
 # Setup
-title:               Poole
-tagline:             The Jekyll Butler
-url:                 http://getpoole.com
-paginate:            1
+title:               Hello, main()
+tagline:             
+url:                 http://githubsmilo.github.io
+paginate:            3
 baseurl:             ""
 
 # Assets
@@ -17,9 +17,9 @@ sass:
 
 # About/contact
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+  name:              sMiLo
+  url:               http://githubsmilo.github.io
+  email:             smilolistener@gmail.com
 
 # Custom vars
 version:             2.0.0
@@ -30,3 +30,8 @@ github:
 gems:
   - jekyll-paginate
   - jekyll-gist
+
+pages_list:
+  About: '/about'
+  Archive: '/archive'
+  Feed: '/atom.xml'
