@@ -1,0 +1,43 @@
+---
+layout: post
+title:  "이제는 흘러가버린, Git 도입 이야기"
+date:   2016-03-16
+comments : true
+categories:
+- blog
+permalink: 이제는 흘러가버린, Git 도입 이야기
+---
+
+### Git 도입 과정
+
+소스 관리를 위해 Git를 사용하기 시작한 것은 2012년 5월이었다. 그 전까지는 Subversion을 사용 중이었다. 10명이 넘는 팀원들이 별다른 불편 없이 사용했던 기억을 더듬어 보면 Subversion도 나름 괜찮은 도구이다. 하지만 Git를 도입하게 된 결정적인 계기가 발생 하였으니, 그것은 바로 [Google Android frameworks](https://source.android.com/source/index.html){:target="_blank"} 관련 프로젝트!
+
+수많은 Git repository들로 구성되어 있고, 이것들을 통합 관리하기 위한 Repo를 도입한 Google Android frameworks은 그동안 접하던 프로젝트에 비하면 엄청나게 복잡한 관리 구조 였다. 프로젝트 초반에는 Subversion을 사용하여 소스를 관리하기 시작했다. 하지만 '우리도 대세에 따라 Git를 사용해보자'는 내부 의견이 대두되어 Git 도입을 적극 검토하기 시작했다.
+
+프로젝트 관리를 위해 내부적으로 사용 중인 Redmine의 경우 프로젝트 한개 당 하나의 Git repository만 연동 시킬 수 있는 한계가 있다. 그 당시 Redmine을 적극 사용하던 우리 팀은 Redmine에서 소스 수정 이력을 보고 싶어했고, 기타 자잘한 이유 때문에 Android frameworks 소스를 Git+Repo 형태가 아닌 하나의 Git repository 형태로 관리하기로 결정 했다. (이렇게 하면 pull/push 속도 뿐만 아니라 branch/merge 속도 또한 엄청나게 느려지기 마련이다. 이런 불만 사항이 쌓이고 프로젝트 여건이 변하면서 1년 후에 Repo를 도입했다)
+
+### Git 도입
+
+암튼 Subversion에서 Git로 넘어가는 작업을 내가 맡게 되었고, 아래 미션이 주어졌다. 자체 서버에서 관리하던 Subversion을 자체 서버에 설치된 Git로 옮기는 작업이라고 보면 된다.
+
+1. 기존 Subversion에서 관리하던 소스를 안전하게 Git로 전환 시킬 것
+  * 구글에서 찾은 정보를 가지고 이런저런 시도 끝에 migration에 성공 했다.
+  * 다양한 상황이 있을 수 있으니 어떤게 정답이라고 말하기 어렵고, 작업 하면서 GitHub에 정리한 [링크](https://github.com/githubsmilo/TipsBoard/blob/master/Git.md#how-to-migrate-from-subversion-to-git){:target="_blank"}로 대체한다.
+
+2. 팀원들에게 Git 교육 진행 및 지속적인 QnA 담당
+  * [git - 간편 안내서](http://rogerdudler.github.io/git-guide/index.ko.html){:target="_blank"}를 가지고 교육을 진행 했다.
+  * branch/merge 작업이 왜 필요한지 이해시키는 부분이 가장 힘들었다. 역시나 팀원이 branch/merge 작업을 하다가 어려움을 겪을 때마다, 혹은 꼬일 때마다 항상 달려가곤 했다.
+
+4. 실수로 인해 발생 가능한 문제를 미리 차단
+  * master branch는 최신 릴리즈 상태를 유지 하기로  했다. 하지만 실수로 master branch에 push 해버리는 상황이 종종 발생 했는데, 이것을 막기 위해 master branch에 lock을 걸고, 릴리즈 할 때에만 살짝 풀었다. master branch를 lock 하는 방법은 [링크](http://stackoverflow.com/a/6827045/1837846){:target="_blank"} 참조.
+
+5. deployment, release 계획 수립
+
+6. Git repository를 지속적으로 관리
+  * 그 후로 지금까지 모든 프로젝트의 소스 관리를 맡고 있다. (역시 처음에 손대지 말았어야 하나?)
+
+### 그 이후
+
+Git의 장점은 익히 알려진 바와 같이 너무나도 많다. private Git 서버가 날라가는 바람에 로컬에 있던 소스를 사용해서 되살린 적도 있으니 Git 도입 시도는 충분히 밥값을 했다. 더구나 개인 문서를 Git repository에 등록해서 히스토리를 관리 하는 용도로도 사용하니 업무에 빠지면 안되는 필수 도구가 되어 버렸다.
+
+현재 참여하는 프로젝트에서는 GitHub를 사용하고 있다. private Git와는 또다른 재미가 있는 GitHub. 이와 관련된 이야기는 다음에 작성해 보기로 하자.

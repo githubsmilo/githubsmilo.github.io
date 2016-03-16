@@ -5,7 +5,7 @@ permalink:           pretty
 title:               /* DicaStyle */
 tagline:             
 url:                 http://githubsmilo.github.io
-paginate:            2
+paginate:            1
 baseurl:             ""
 
 # Assets
