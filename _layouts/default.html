@@ -3,6 +3,7 @@
 
   {% include head.html %}
   {% include google_analytics.html %}
+  {% include comments_count.html %}
   
   <body>
 
@@ -19,10 +20,9 @@
 
       <main>
         {{ content }}
+        {% include comments.html %}
       </main>
 
-      {% include comments.html %}
-  
       <footer class="footer">
         <small>
           &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>. All rights reserved.

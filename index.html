@@ -12,7 +12,8 @@ title: Home
       </a>
     </h1>
 
-    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
+    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }} &middot;
+    <a href="{{ post.url }}#disqus_thread" data-disqus-identifier="{{ site.disqusid }}{{ post.url | replace:'index.html','' }}"></a></time>
 
     {{ post.content }}
   </article>
