@@ -1,0 +1,87 @@
+---
+layout: post
+title:  "About D3.js"
+date:   2016-03-27
+comments : true
+categories:
+- blog
+permalink: About D3.js
+---
+
+![](http://cfile29.uf.tistory.com/image/1159003A5170FF5328EA35)
+
+#### 개요
+* [https://d3js.org](https://d3js.org)
+* [https://github.com/mbostock/d3/wiki/Gallery](https://github.com/mbostock/d3/wiki/Gallery)
+* D3.js is a JavaScript library for manipulating documents based on data. D3 helps you bring data to life using HTML, SVG, and CSS. D3’s emphasis on web standards gives you the full capabilities of modern browsers without tying yourself to a proprietary framework, **combining powerful visualization components and a data-driven approach to DOM manipulation.**
+
+#### [D3 Workshop](https://bost.ocks.org/mike/d3/workshop/#0)
+* Visualizing Data with Web Standards (HTML, SVG, CSS, javascript, CSV, JSON). D3 provides transformation, no representation.
+* Visualization requires visual encoding: mapping data to elements.
+* The name "D3" refers to the W3C Document Object Model.
+
+#### [Tutorials](https://github.com/mbostock/d3/wiki/Tutorials)
+[vegibit](http://vegibit.com/create-a-bar-chart-with-d3-javascript/)에 올라온 turorial을 따라해 보았다. index.html은 아래와 같다.
+{% highlight html %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>D3.js</title>
+</head>
+
+<div class="someclass">
+    <h2>Create A Bar Chart With D3 JavaScript</h2>
+    <div id="bar-chart">
+    </div>
+</div>
+
+<body>
+<script src="d3.min.js" charset="utf-8"></script>
+<script src="test.js"></script>
+</body>
+</html>
+{% endhighlight %}
+test.js는 아래와 같다.
+{% highlight javascript %}
+var chartdata = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 135, 150, 165, 180, 200, 220];
+var height = 200, width = 720, barWidth = 40, barOffset = 20;
+ 
+var yScale = d3.scale.linear()
+	.domain([0, d3.max(chartdata)])
+	.range([0, height])
+ 
+var xScale = d3.scale.ordinal()
+	.domain(d3.range(0, chartdata.length))
+	.rangeBands([0, width])
+ 
+var colors = d3.scale.linear()
+	.domain([0, chartdata.length*.33, chartdata.length*.66, chartdata.length])
+	.range(['#d6e9c6', '#bce8f1', '#faebcc', '#ebccd1'])
+ 
+d3.select('#bar-chart').append('svg')
+	.attr('width', width)
+	.attr('height', height)
+	.style('background', '#dff0d8')
+	.selectAll('rect').data(chartdata)
+	.enter().append('rect')
+	.style({'fill': function(data,i){return colors(i);}, 'stroke': '#31708f', 'stroke-width': '5'})
+	.attr('width', xScale.rangeBand())
+	.attr('height', function (data) {
+		return yScale(data);
+	})
+	.attr('x', function (data, i) {
+		return xScale(i);
+	})
+	.attr('y', function (data) {
+		return height - yScale(data);
+	});
+{% endhighlight %}
+결과는 아래와 같다.
+![](https://raw.githubusercontent.com/githubsmilo/githubsmilo.github.io/master/_files/d3_js_example_result.PNG)
+
+#### references
+* [D3.js 배우는 방법](http://mobicon.tistory.com/275)
+* [D3.js 기초 - select API와 enter() 이해하기](http://blog.nacyot.com/articles/2015-02-02-d3-selection)
+* [D3.js 시작하기](http://webframeworks.kr/getstarted/d3js/)
+
