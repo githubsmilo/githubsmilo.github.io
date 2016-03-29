@@ -16,7 +16,7 @@ permalink: Hello, SBT
 ### 2. SBT 설치
 * Ubuntu 15.10 에서 설치 시도
 * 설치 과정
-{% highlight bash %}
+{% highlight shell %}
 $ echo "deb https://dl.bintray.com/sbt/debian /" | sudo tee -a /etc/apt/sources.list.d/sbt.list
 $ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 642AC823
 $ sudo apt-get update
@@ -24,21 +24,26 @@ $ sudo apt-get install sbt
 $ sbt
 {% endhighlight %}
 * sbt 실행 시 아래 에러가 발생하면
-{% highlight bash %}
+{% highlight shell %}
 module not found: org.scala-sbt#sbt;0.13.11
 {% endhighlight %}
 * ssl certificates 업데이트
-{% highlight bash %}
+{% highlight shell %}
 $ sudo apt-get install ssh
 $ sudo update-ca-certificates -f
 {% endhighlight %}
 * sbt 실행해서 모듈 다운로드 시작
-{% highlight bash %}
+{% highlight shell %}
 $ sbt
 {% endhighlight %}
 
-### 3. [Hello, world](http://www.scala-sbt.org/0.13/docs/Hello.html){:target="_blank"}
-{% highlight bash %}
+### 3. SBT version
+{% highlight shell %}
+$ sbt about
+{% endhighlight %}
+
+### 4. [Hello, world](http://www.scala-sbt.org/0.13/docs/Hello.html){:target="_blank"}
+{% highlight shell %}
 $ mkdir hello
 $ cd hello
 $ echo 'object Hi { def main(args: Array[String]) = println("Hi!") }' > hw.scala
