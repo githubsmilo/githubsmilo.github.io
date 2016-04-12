@@ -4,7 +4,7 @@ title:  "Ubuntu 15.10에 Hadoop 2.6.4 설치"
 date:   2016-04-06
 comments : true
 categories:
-- blog
+- bigdata
 permalink: Ubuntu 15.10에 Hadoop 2.6.4 설치
 ---
 

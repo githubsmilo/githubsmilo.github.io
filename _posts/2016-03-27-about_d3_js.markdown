@@ -4,7 +4,7 @@ title:  "About D3.js"
 date:   2016-03-27
 comments : true
 categories:
-- blog
+- bigdata
 permalink: About D3.js
 ---
 

@@ -4,7 +4,7 @@ title:  "Ubuntu 15.10에 Spark 1.6.1 설치"
 date:   2016-04-10
 comments : true
 categories:
-- blog
+- bigdata
 permalink: Ubuntu 15.10에 Spark 1.6.1 설치
 ---
 
