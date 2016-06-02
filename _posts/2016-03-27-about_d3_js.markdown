@@ -5,7 +5,6 @@ date:   2016-03-27
 comments : true
 categories:
 - bigdata
-permalink: About D3.js
 ---
 
 ![](http://cfile29.uf.tistory.com/image/1159003A5170FF5328EA35)

@@ -5,7 +5,6 @@ date:   2016-04-11
 comments : true
 categories:
 - bigdata
-permalink: Ubuntu 15.10에 Zeppelin 0.5.6 설치
 ---
 
 [Ubuntu 15.10에 Spark 1.6.1 설치](http://githubsmilo.github.io/Ubuntu%2015.10%EC%97%90%20Spark%201.6.1%20%EC%84%A4%EC%B9%98) 글에 이어지는 내용이다. Zeppelin 0.5.6에 대한 아래 문서를 토대로 진행 하였다.

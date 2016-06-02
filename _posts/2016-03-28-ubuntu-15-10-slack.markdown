@@ -5,7 +5,6 @@ date:   2016-03-28
 comments : true
 categories:
 - blog
-permalink: Ubuntu 15.10 한글판에서 Slack이 실행 되지 않는 문제
 ---
 
 ![](http://design.ubuntu.com/wp-content/uploads/ubuntu-logo14.png)

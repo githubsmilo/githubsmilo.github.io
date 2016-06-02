@@ -5,7 +5,6 @@ date:   2016-05-03
 comments : true
 categories:
 - fantasy
-permalink: 나만의 Yahoo Fantasy 서비스를 만들어 보자 (3)
 ---
 
 이전 내용은 여기서 볼 수 있다.

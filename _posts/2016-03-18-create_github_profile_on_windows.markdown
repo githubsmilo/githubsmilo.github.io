@@ -5,7 +5,6 @@ date:   2016-03-18
 comments : true
 categories:
 - blog
-permalink: Windows 에서 GitHub Profile 만들기
 ---
 
 [10분만에 Github Profile 만들기](http://1ambda.github.io/create-github-profile-in-10-minutes) 글을 참고하여 GitHub profile을 만들어본 과정을 간단히 정리한다. Mac, Ubuntu 용 가이드는 있는데, Windows 에서 진행하려니 자잘한 문제가 발생해서 살짝 고생했다.

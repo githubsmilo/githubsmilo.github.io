@@ -5,7 +5,6 @@ date:   2016-03-07
 comments : true
 categories:
 - blog
-permalink: Hello, SBT
 ---
 
 ### 1. SBT 란?

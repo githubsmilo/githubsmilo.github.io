@@ -5,7 +5,6 @@ date:   2016-04-06
 comments : true
 categories:
 - bigdata
-permalink: Ubuntu 15.10에 Hadoop 2.6.4 설치
 ---
 
 Ubuntu 15.10에서 hadoop 2.6.4를 설치하는 과정을 간단히 정리했다. PC 한대에서 가상 분산 환경을 만들 생각이기 때문에 [Pseudo-Distributed Mode](http://hadoop.apache.org/docs/r2.6.4/hadoop-project-dist/hadoop-common/SingleCluster.html#Pseudo-Distributed_Operation)로 설정한다.

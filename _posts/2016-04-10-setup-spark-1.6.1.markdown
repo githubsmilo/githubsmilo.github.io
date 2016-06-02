@@ -5,7 +5,6 @@ date:   2016-04-10
 comments : true
 categories:
 - bigdata
-permalink: Ubuntu 15.10에 Spark 1.6.1 설치
 ---
 
 [Ubuntu 15.10에 Hadoop 2.6.4 설치](http://githubsmilo.github.io/Ubuntu%2015.10%EC%97%90%20hadoop%202.6.4%20%EC%84%A4%EC%B9%98) 글에 이어지는 내용이다.

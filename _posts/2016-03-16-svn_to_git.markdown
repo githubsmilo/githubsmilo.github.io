@@ -5,7 +5,6 @@ date:   2016-03-16
 comments : true
 categories:
 - blog
-permalink: 이제는 흘러가버린, Git 도입 이야기
 ---
 
 ### Git 도입 과정
