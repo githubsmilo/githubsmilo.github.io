@@ -31,7 +31,7 @@ $ git clone git@github.com:oh-my-github/viewer.git my-github-profile
 $ cd my-github-profile
 $ git remote add upstream git@github.com:oh-my-github/viewer.git
 $ git remote remove origin
-$ git remote add origin git@github.com:githubsmilo/my-github-profile
+$ git remote add origin git@github.com:withsmilo/my-github-profile
 {% endhighlight %}
 
 Viewer는 기본 설정인 `oh-my-github`에 맞게 되어 있기 때문에 `my-github-profile`을 사용하려면 조금 수정해야 한다. npm으로 이것저것 설치해서 빌드해서 테스트 해보기에는 귀찮으므로 필요한 소스만 조금 수정해서 사용하기로 한다.
@@ -64,7 +64,7 @@ C:\nvm\v5.0.0\node_modules\oh-my-github\dist\generator\file_util.js
 ### 4. oh-my-github 실행하여 프로필 데이터 생성 후 GitHub에 업로드
 {% highlight bash %}
 $ cd my-github-profile
-$ omg init githubsmilo oh-my-github
+$ omg init withsmilo oh-my-github
 $ omg generate [YOUR_ACCESS_TOKEN]
 $ git add --all
 $ git commit -m "feat: Update Profile"
@@ -73,5 +73,5 @@ $ git push origin HEAD
 {% endhighlight %}
 
 ### 5. 확인
-[http://githubsmilo.github.io/my-github-profile](http://githubsmilo.github.io/my-github-profile)로 가서 정상적으로 보이는지 확인한다.
+[http://withsmilo.github.io/my-github-profile](http://withsmilo.github.io/my-github-profile)로 가서 정상적으로 보이는지 확인한다.
 

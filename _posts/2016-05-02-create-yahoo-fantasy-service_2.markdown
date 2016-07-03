@@ -9,7 +9,7 @@ categories:
 
 이전 내용은 여기서 볼 수 있다.
 
-* [나만의 Yahoo Fantasy 서비스를 만들어 보자 (1)](http://githubsmilo.github.io/%EB%82%98%EB%A7%8C%EC%9D%98%20Yahoo%20Fantasy%20%EC%84%9C%EB%B9%84%EC%8A%A4%EB%A5%BC%20%EB%A7%8C%EB%93%A4%EC%96%B4%20%EB%B3%B4%EC%9E%90%20(1))
+* [나만의 Yahoo Fantasy 서비스를 만들어 보자 (1)](http://withsmilo.github.io/%EB%82%98%EB%A7%8C%EC%9D%98%20Yahoo%20Fantasy%20%EC%84%9C%EB%B9%84%EC%8A%A4%EB%A5%BC%20%EB%A7%8C%EB%93%A4%EC%96%B4%20%EB%B3%B4%EC%9E%90%20(1))
 
 ### 서비스 컨셉
 
@@ -42,7 +42,7 @@ Yahoo 공식 문서에서 가이드 하는 OAuth는 php로 만들어져 있는�
 
 역시 삽질이 빠질 수 없다. [yfsapi](https://github.com/whatadewitt/yfsapi) node.js module을 어떻게 하면 사용할 수 있을까 둘러보다가 yfsapi에서 OAuth 1.0 대신 OAuth 2.0을 사용하는게 어떻겠냐는 [글](https://github.com/whatadewitt/yfsapi/issues/2)을 봤다. Yahoo Fantasy API에서 OAuth 2.0을 공식적으로 지원하지 않지만 https 주소로 쿼리를 날리면 성공한다는 내용이었다. 그러게? 왜 OAuth 2.0을 사용하지 않지? 내가 시도해 보기로 했다. 삽질 시작..
 
-먼저 yfsapi에서 OAuth 1.0을 제거한 node.js module, [yfsapi-without-auth](https://github.com/githubsmilo/yfsapi-without-auth)를 만들었다. 이걸 [npm](https://www.npmjs.com/package/yahoo-fantasy-without-auth)에 처음으로 올려봤는데, 등록하고 내려받는 방법이 너무 쉬워서 깜짝 놀랐다. 이래서 npm이 엄청난 인기를 끌고 있구나 하며 감탄사가 나오더라. 곧이어 OAuth 2.0과 yfsapi-without-auth을 사용해서 Yahoo Fantasy API를 테스트 할 수 있는 [node.js sample application](https://github.com/githubsmilo/yfsapi-oauth2-test-sandbox)을 만들었다. 테스트 해보니 잘 동작한다. 신바람이 나서 [heroku](https://yfsapi-oauth2-test-sandbox.herokuapp.com/)에 올리고, 사이트에 GitHub 리본도 달았다.
+먼저 yfsapi에서 OAuth 1.0을 제거한 node.js module, [yfsapi-without-auth](https://github.com/withsmilo/yfsapi-without-auth)를 만들었다. 이걸 [npm](https://www.npmjs.com/package/yahoo-fantasy-without-auth)에 처음으로 올려봤는데, 등록하고 내려받는 방법이 너무 쉬워서 깜짝 놀랐다. 이래서 npm이 엄청난 인기를 끌고 있구나 하며 감탄사가 나오더라. 곧이어 OAuth 2.0과 yfsapi-without-auth을 사용해서 Yahoo Fantasy API를 테스트 할 수 있는 [node.js sample application](https://github.com/withsmilo/yfsapi-oauth2-test-sandbox)을 만들었다. 테스트 해보니 잘 동작한다. 신바람이 나서 [heroku](https://yfsapi-oauth2-test-sandbox.herokuapp.com/)에 올리고, 사이트에 GitHub 리본도 달았다.
 
 ### 프로토타입 테스트
 
@@ -68,4 +68,4 @@ new CronJob('59 59 15 * * *', function() {
 ```
 
 결과는 대성공! 오후 4시에 맞춰 손으로 일일이 애드 버튼을 클릭하는 사람들을 제치고 가장 먼저 애드에 성공 했다. 가능성이 보인다.
-![](https://github.com/githubsmilo/githubsmilo.github.io/blob/master/_files/yahoo_fantasy_add_4pm_by_app.png?raw=true)
+![](https://github.com/withsmilo/withsmilo.github.io/blob/master/_files/yahoo_fantasy_add_4pm_by_app.png?raw=true)

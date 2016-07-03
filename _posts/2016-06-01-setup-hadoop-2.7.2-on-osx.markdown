@@ -7,7 +7,7 @@ categories:
 - bigdata
 ---
 
-Mac OS X에 Hadoop을 설치할 일이 생겨서 예전에 Ubuntu에 설치할 때 [정리해 놓은 글](http://githubsmilo.github.io/Ubuntu%2015.10%EC%97%90%20Hadoop%202.6.4%20%EC%84%A4%EC%B9%98)을 참고하여 진행해 보았다. 하지만 설치 후 실행시켜 보니 아래 warning이 발생한다.
+Mac OS X에 Hadoop을 설치할 일이 생겨서 예전에 Ubuntu에 설치할 때 [정리해 놓은 글](http://withsmilo.github.io/Ubuntu%2015.10%EC%97%90%20Hadoop%202.6.4%20%EC%84%A4%EC%B9%98)을 참고하여 진행해 보았다. 하지만 설치 후 실행시켜 보니 아래 warning이 발생한다.
 
 `Unable to load native-hadoop library for your platform... using builtin-java classes where applicable`
 

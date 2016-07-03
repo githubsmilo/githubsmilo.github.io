@@ -9,12 +9,12 @@ categories:
 
 이전 내용은 여기서 볼 수 있다.
 
-* [나만의 Yahoo Fantasy 서비스를 만들어 보자 (1)](http://githubsmilo.github.io/%EB%82%98%EB%A7%8C%EC%9D%98%20Yahoo%20Fantasy%20%EC%84%9C%EB%B9%84%EC%8A%A4%EB%A5%BC%20%EB%A7%8C%EB%93%A4%EC%96%B4%20%EB%B3%B4%EC%9E%90%20(1))
-* [나만의 Yahoo Fantasy 서비스를 만들어 보자 (2)](http://githubsmilo.github.io/%EB%82%98%EB%A7%8C%EC%9D%98%20Yahoo%20Fantasy%20%EC%84%9C%EB%B9%84%EC%8A%A4%EB%A5%BC%20%EB%A7%8C%EB%93%A4%EC%96%B4%20%EB%B3%B4%EC%9E%90%20(2))
+* [나만의 Yahoo Fantasy 서비스를 만들어 보자 (1)](http://withsmilo.github.io/%EB%82%98%EB%A7%8C%EC%9D%98%20Yahoo%20Fantasy%20%EC%84%9C%EB%B9%84%EC%8A%A4%EB%A5%BC%20%EB%A7%8C%EB%93%A4%EC%96%B4%20%EB%B3%B4%EC%9E%90%20(1))
+* [나만의 Yahoo Fantasy 서비스를 만들어 보자 (2)](http://withsmilo.github.io/%EB%82%98%EB%A7%8C%EC%9D%98%20Yahoo%20Fantasy%20%EC%84%9C%EB%B9%84%EC%8A%A4%EB%A5%BC%20%EB%A7%8C%EB%93%A4%EC%96%B4%20%EB%B3%B4%EC%9E%90%20(2))
 
 ### 소스 기여
 
-이제 OAuth 1.0을 사용하는 기존의 [yfsapi](https://github.com/whatadewitt/yfsapi) node.js module과, OAuth 2.0을 사용하는 [yfsapi-without-auth](https://github.com/githubsmilo/yfsapi-without-auth) 중에서 어떤 것을 사용할 것인지 결정해야 하는 시간이 다가왔다.
+이제 OAuth 1.0을 사용하는 기존의 [yfsapi](https://github.com/whatadewitt/yfsapi) node.js module과, OAuth 2.0을 사용하는 [yfsapi-without-auth](https://github.com/withsmilo/yfsapi-without-auth) 중에서 어떤 것을 사용할 것인지 결정해야 하는 시간이 다가왔다.
 
 일단 yfsapi에서 OAuth 1.0을 제거하는 [pull request](https://github.com/whatadewitt/yfsapi/pull/5)를 만들어서 yfsapi의 owner는 어떻게 생각하는지 문의 했다. 그리고 이어진 일주일 간의 의견 교환. 난 OAuth 2.0 지원을 위해 yfsapi에서 인증 로직을 분리하고, yfsapi는 사용자로부터 오직 access token만 받자고 제안 했다. 하지만 access token 없이 consumer key와 consumer secret 만으로 game.meta와 같은 public data에 접근 할 수 있으면 좋겠다는 owner의 의견 때문에 pull request는 리젝 되었다. 그러면서 내 의견을 일부 반영한 소스 리팩토링을 진행 중이라고 밝힘에 따라 yfsapi-without-auth 대신 yfsapi에 소스 기여를 하기로 결정 했다. (yfsapi의 리팩토링이 끝나면 변경 사항을 yfsapi-without-auth에 반영할 예정)
 

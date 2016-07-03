@@ -4,7 +4,7 @@ permalink:           pretty
 # Setup
 title:               /* DicaStyle */
 tagline:             
-url:                 http://githubsmilo.github.io
+url:                 http://withsmilo.github.io
 paginate:            1
 baseurl:             ""
 
@@ -18,7 +18,7 @@ sass:
 # About/contact
 author:
   name:              sMiLo
-  url:               http://githubsmilo.github.io
+  url:               http://withsmilo.github.io
   email:             smilolistener@gmail.com
 
 # Custom vars

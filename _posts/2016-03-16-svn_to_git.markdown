@@ -21,7 +21,7 @@ categories:
 
 1. 기존 Subversion에서 관리하던 소스를 안전하게 Git로 전환 시킬 것
   * 구글에서 찾은 정보를 가지고 이런저런 시도 끝에 migration에 성공 했다.
-  * 다양한 상황이 있을 수 있으니 어떤게 정답이라고 말하기 어렵고, 작업 하면서 GitHub에 정리한 [링크](https://github.com/githubsmilo/TipsBoard/blob/master/Git.md#how-to-migrate-from-subversion-to-git){:target="_blank"}로 대체한다.
+  * 다양한 상황이 있을 수 있으니 어떤게 정답이라고 말하기 어렵고, 작업 하면서 GitHub에 정리한 [링크](https://github.com/withsmilo/TipsBoard/blob/master/Git.md#how-to-migrate-from-subversion-to-git){:target="_blank"}로 대체한다.
 
 2. 팀원들에게 Git 교육 진행 및 지속적인 QnA 담당
   * [git - 간편 안내서](http://rogerdudler.github.io/git-guide/index.ko.html){:target="_blank"}를 가지고 교육을 진행 했다.

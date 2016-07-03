@@ -1,3 +1,3 @@
-* Published to [githubsmilo.github.io](http://githubsmilo.github.io)
+* Published to [withsmilo.github.io](http://withsmilo.github.io)
 * Forked from [poole](https://github.com/poole/poole)
 

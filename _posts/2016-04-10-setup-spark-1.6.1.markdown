@@ -7,7 +7,7 @@ categories:
 - bigdata
 ---
 
-[Ubuntu 15.10에 Hadoop 2.6.4 설치](http://githubsmilo.github.io/Ubuntu%2015.10%EC%97%90%20hadoop%202.6.4%20%EC%84%A4%EC%B9%98) 글에 이어지는 내용이다.
+[Ubuntu 15.10에 Hadoop 2.6.4 설치](http://withsmilo.github.io/bigdata/2016/04/06/setup-hadoop-2.6.4) 글에 이어지는 내용이다.
 
 ### 1. Scala 설치
 
