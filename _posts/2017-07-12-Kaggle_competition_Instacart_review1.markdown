@@ -26,6 +26,3 @@ categories:
 * Deep Learning이 아니다보니 feature engineering이 굉장히 중요하다. 고민, 또 고민. 하지만 기껏 생각한 것을 구현할 때 pandas 라는 벽에 부딪혀서 진도가 안나가는 경우가 있다. 아, pandas 어려워.
 
 * hyperparameter tuning은 다른 사람들이 한 것을 참고 했다. 퇴근하기 전에 tuning job을 돌려놓고 가면서 조금씩 자체 tuning 중.
-
-* 계속 업데이트 중...
-
