@@ -28,6 +28,7 @@ int main() {
 ```
 
 ### My connections
+* [Twitter](https://twitter.com/withsmilo)
 * [LinkedIn](https://www.linkedin.com/in/smilo)
 * [GitHub](https://github.com/withsmilo)
 * [StackOverflow](http://stackoverflow.com/users/1837846/smilo)
